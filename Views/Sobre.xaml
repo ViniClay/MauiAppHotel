@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiAppHotel.Views.Sobre" Title="Sobre" BackgroundColor="#F7F9FB">
+
+    <VerticalStackLayout Padding="30" Spacing="20" VerticalOptions="Center">
+
+        <Label Text="MauiAppHotel" FontSize="32" FontAttributes="Bold"
+               TextColor="#2E86DE" HorizontalOptions="Center"/>
+
+        <Label Text="Aplicativo desenvolvido como parte de um projeto de hospedagem inteligente."
+               FontSize="16" HorizontalOptions="Center" HorizontalTextAlignment="Center"/>
+
+        <Frame BackgroundColor="White" CornerRadius="15" Padding="20">
+            <VerticalStackLayout Spacing="10">
+                <Label Text="Desenvolvedor: Vinícius Clay" FontSize="16"/>
+                <Label Text="Ano de desenvolvimento: 2025" FontSize="16"/>
+                <Label Text="Plataforma: .NET MAUI" FontSize="16"/>
+            </VerticalStackLayout>
+        </Frame>
+
+        <Button Text="Voltar"
+                BackgroundColor="#2E86DE"
+                TextColor="White"
+                CornerRadius="10"
+                Command="{Binding GoBackCommand}"/>
+    </VerticalStackLayout>
+</ContentPage>
