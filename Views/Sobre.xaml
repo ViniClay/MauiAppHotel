@@ -6,7 +6,7 @@
     <VerticalStackLayout Padding="30" Spacing="20" VerticalOptions="Center">
 
         <Label Text="MauiAppHotel" FontSize="32" FontAttributes="Bold"
-               TextColor="#2E86DE" HorizontalOptions="Center"/>
+               TextColor="{StaticResource ClaysColor}" HorizontalOptions="Center"/>
 
         <Label Text="Aplicativo desenvolvido como parte de um projeto de hospedagem inteligente."
                FontSize="16" HorizontalOptions="Center" HorizontalTextAlignment="Center"/>
@@ -19,10 +19,7 @@
             </VerticalStackLayout>
         </Frame>
 
-        <Button Text="Voltar"
-                BackgroundColor="#2E86DE"
-                TextColor="White"
-                CornerRadius="10"
-                Command="{Binding GoBackCommand}"/>
+        <Button Text="Voltar" BackgroundColor="{StaticResource ClaysColor}" TextColor="White"
+                CornerRadius="10" Command="{Binding GoBackCommand}" Clicked="Button_Clicked"/>
     </VerticalStackLayout>
 </ContentPage>
